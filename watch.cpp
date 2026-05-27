@@ -1,5 +1,3 @@
-// watch.cpp - Навигация по стадиям из ОДНОГО файла
-// Compile: g++ watch.cpp -o watch -lraylib
 #include <raylib.h>
 #include <cstdio>
 #include <vector>
