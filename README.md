@@ -18,7 +18,7 @@ The project is formalized as a finite Markov Decision Process (MDP):
 | Goal | Maximize `E[∑ γᵏ·rₖ]` | γ=0.95 |
 
 ### Update the Q-table (empirical approximation of the Bellman equation) 
-Q[s][a] += АЛЬФА * (r + ГАММА * max_next - Q[s][a]);
+Q[s][a] += ALPHA * (r + GAMMA * max_next - Q[s][a]);
 // α=0,2, γ=0,95, max_next = max_a' Q[s'][a']
 
 This is a stochastic approximation of the mathematical expectation: by the Law of Large Numbers, when the pair (x,a) is visited repeatedly, the value of m[y][a] converges to the true e[G_{total}].
